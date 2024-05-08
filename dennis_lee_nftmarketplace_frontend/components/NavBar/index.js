@@ -7,3 +7,10 @@ import Profile from "./Profile/Profile";
 import SideBar from "./SideBar/SideBar";
 
 export {Discover,HelpCenter,Notification,Profile,SideBar}
+
+export const Home = () => {
+    return <><div>Home</div></>;
+    
+  };
+  export default Home;
+  

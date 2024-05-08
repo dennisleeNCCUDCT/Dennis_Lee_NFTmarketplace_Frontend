@@ -51,7 +51,25 @@ const openNotification=()=>{
     }else{ setNotification(true);}
 }
 //openProfile
-const openProfile=()=>{ }
+const openProfile=()=>{
+  if(!profile){
+    setProfile(true)
+    setHelp(false)
+    setDiscover(false)
+    setNotification(false)
+  }
+  else{setProfile(false)
+    
+ }}
+//openSidebar
+const openSideBar=()=>{
+  if(!openSideMenu){
+   setOpenSideMenu(true);
+  }
+  else{setopen(false)
+    
+ }}
+ 
 
 
 
@@ -108,6 +126,13 @@ const openProfile=()=>{ }
     </div>
       </div>
       </div>
+       {/*//SideBarcomponent*/}
+       {openSideMenu&&(
+<div className={Style.SideBar}>
+<SideBar setOpenSideMenu={setOpenSideMenu}/>
+</div>
+
+       )}
     </div>
   )
 }
